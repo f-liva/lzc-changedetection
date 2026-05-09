@@ -31,7 +31,7 @@ Two services in single `.lpk`:
 - **sockpuppet** (`dgtlmoon/sockpuppetbrowser:0.0.3`) — Chrome browser sidecar, port 3000 (CDP via WebSocket)
 
 `changedetection` reaches `sockpuppet` over Lazycat's internal service DNS:
-`ws://sockpuppet.cloud.lazycat.app.changedetection.lzcapp:3000`
+`ws://sockpuppet.cloud.lazycat.app.changedetectionio.lzcapp:3000`
 
 ## Features unlocked by Chrome integration
 
@@ -62,7 +62,7 @@ cd changedetection-lzc/
 Then follow the printed PowerShell command:
 
 ```powershell
-lzc-cli app install C:\Users\fede9\Desktop\cloud.lazycat.app.changedetection-v1.0.0.lpk
+lzc-cli app install C:\Users\fede9\Desktop\cloud.lazycat.app.changedetectionio-v1.0.0.lpk
 ```
 
 ## Configuration
@@ -98,13 +98,13 @@ Sockpuppet:
 
 ```bash
 # Status
-powershell.exe -Command "lzc-cli app status cloud.lazycat.app.changedetection"
+powershell.exe -Command "lzc-cli app status cloud.lazycat.app.changedetectionio"
 
 # Log
-powershell.exe -Command "lzc-cli app log cloud.lazycat.app.changedetection"
+powershell.exe -Command "lzc-cli app log cloud.lazycat.app.changedetectionio"
 
 # Uninstall (DESTROYS /datastore)
-powershell.exe -Command "lzc-cli app uninstall cloud.lazycat.app.changedetection"
+powershell.exe -Command "lzc-cli app uninstall cloud.lazycat.app.changedetectionio"
 ```
 
 ## License
