@@ -1,2 +1,10 @@
 pkgout: ./
 icon: icon.png
+
+images:
+  changedetection:
+    dockerfile: ../docker/changedetection/Dockerfile
+    upstream-match: registry.lazycat.cloud
+  sockpuppet:
+    dockerfile: ../docker/sockpuppet/Dockerfile
+    upstream-match: registry.lazycat.cloud

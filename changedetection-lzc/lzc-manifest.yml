@@ -1,4 +1,3 @@
-
 application:
   routes:
     - /=http://changedetection.cloud.lazycat.app.changedetectionio.lzcapp:5000
@@ -6,7 +5,7 @@ application:
 
 services:
   changedetection:
-    image: registry.lazycat.cloud/u30562882/dgtlmoon/changedetection.io:2b28f8bb68da3379
+    image: embed:changedetection
     binds:
       - /lzcapp/var/datastore:/datastore
     environment:
@@ -21,7 +20,7 @@ services:
       - LOGGER_LEVEL=DEBUG
 
   sockpuppet:
-    image: registry.lazycat.cloud/u30562882/dgtlmoon/sockpuppetbrowser:081de799097baf90
+    image: embed:sockpuppet
     environment:
       - SCREEN_WIDTH=1920
       - SCREEN_HEIGHT=1080

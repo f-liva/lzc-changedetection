@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "blobs": [
+    {
+      "digest": "sha256:3e48b1cbd19bc3dfe594576b2e89af0ec82f23ca055a5eb54e91e4bb26952db3",
+      "size": 9529
+    },
+    {
+      "digest": "sha256:6241012f0c49f1c7c6d516fa9a37d2a0b0248cc806d48bed03daa331a9c12730",
+      "size": 2678
+    },
+    {
+      "digest": "sha256:654f54471f624f009a329371c700a223cf13642583369e3ee5a750b0587f37b4",
+      "size": 3441
+    },
+    {
+      "digest": "sha256:ac4032e34b940c71cfc0413a933c23ba4514d50e1bb2c4335b278962c7557bac",
+      "size": 12098
+    }
+  ],
+  "embeddedLayerBytes": 0,
+  "embeddedLayerCount": 0
+}

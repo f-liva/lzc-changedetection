@@ -1,0 +1,84 @@
+version: 1
+images:
+  changedetection:
+    image_id: sha256:ac4032e34b940c71cfc0413a933c23ba4514d50e1bb2c4335b278962c7557bac
+    upstream: registry.lazycat.cloud/u30562882/dgtlmoon/changedetection.io:2b28f8bb68da3379@sha256:2b28f8bb68da3379c1c0c6f34ff4b8247a3d9f72ba97041aea3cc20f84880b51
+    layers:
+      - digest: sha256:0da811fd3ed46c38cea69079fa395a3d715dbdbdd5c8177107c450bf6332bbfa
+        source: upstream
+      - digest: sha256:039df08804d0e605098b0b563d52f6065273780641b5b8517a25d470c8ce96ce
+        source: upstream
+      - digest: sha256:b2689a916b50d244e615fd29a0786eb6dc1f51f5c354f4903a56bcfd3bc1c897
+        source: upstream
+      - digest: sha256:724fc0dfc2934d5e16711d1be01fe409f2b3caa056c1ff30fcd6d61ec0e3b025
+        source: upstream
+      - digest: sha256:6d9746fbc58b9b71058be590963f4e4baf1f1f14e60ec87b76ec496e38559c33
+        source: upstream
+      - digest: sha256:ce49d1d171e77f4c03e71347dfa84c5836949c3b67fee97fb28c8814e9f4aab0
+        source: upstream
+      - digest: sha256:5b24ca553a2b966203d6a9e49efea633d21f1370fed661218170bb52c8978fb1
+        source: upstream
+      - digest: sha256:6594c26325d01ca7aa7df3391b5997a1e967a4e2d5e545cae2458b3a9d2ef6eb
+        source: upstream
+      - digest: sha256:286aaf9bad2d3e301370e47473ccbd58d5eed5511f8eb40396276a19dff1fbbf
+        source: upstream
+      - digest: sha256:55576d16bea3a64b951505d3a897c310ec98c468aed62effcb8c3d001f1b69e5
+        source: upstream
+      - digest: sha256:2a72617e0089f4f4ac6fcf5dad418cbfa8cd0947968f9cdd004bf43c7671fa02
+        source: upstream
+      - digest: sha256:4cfe8b2b3cbb60dab0498ea12864d8177d0600e0335f8eaee626a26b742de7cb
+        source: upstream
+      - digest: sha256:3a5437a98a8a1db8364eea27823a95dc0e1eccada79ada8baca7ee9c07c5045e
+        source: upstream
+      - digest: sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef
+        source: upstream
+      - digest: sha256:933e4ad0f62d1cf1c40bfd004d9f72c8e30a5d796fdc148eb1d947dea531629d
+        source: upstream
+      - digest: sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef
+        source: upstream
+  sockpuppet:
+    image_id: sha256:3e48b1cbd19bc3dfe594576b2e89af0ec82f23ca055a5eb54e91e4bb26952db3
+    upstream: registry.lazycat.cloud/u30562882/dgtlmoon/sockpuppetbrowser:081de799097baf90@sha256:081de799097baf902d7ef8ce2f8989fea308f2e8e56722af20fb65e6333307b9
+    layers:
+      - digest: sha256:aedc3bda2944bb9bcb6c3d475bee8b460db9a9b0f3e0b33a6ed2fd1ae0f1d445
+        source: upstream
+      - digest: sha256:7354210573841e1150e4e17dfc25f5f451c62f3073e02262b3167ad74f80ac82
+        source: upstream
+      - digest: sha256:9ee25bcce72b6c46a39869703cf2d29591f2b49e9ab187304ce61d4b6fd97c0a
+        source: upstream
+      - digest: sha256:a229187a1bb2d7d5cf153b4b3f576d907483fc9658dbf7e1ee554500166e1423
+        source: upstream
+      - digest: sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef
+        source: upstream
+      - digest: sha256:348f3cd5df59ec95782983a297828631428c3a5e54a367fe9efa6189410bab2e
+        source: upstream
+      - digest: sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef
+        source: upstream
+      - digest: sha256:17c86df9b27c7b399b4f32e746d1e54ebd846fc49ceea6b259b524f64f7b1015
+        source: upstream
+      - digest: sha256:67d9d2adfe7ed9694676b5f7e9ee4d527967b9227625d91ae02eb97edc122974
+        source: upstream
+      - digest: sha256:16fddfdc06b56e31fb6b4dd6b2820ff2b8b9292dff7fcb51247e970a77926ec6
+        source: upstream
+      - digest: sha256:6eace248ea7adf9c59df3582e73e6eb29acc56c9f4de652bf4d94543f8f2b12b
+        source: upstream
+      - digest: sha256:0eca651c5d55887843b64da22f58811dbeb7c3b9a2f946aa14104718d0ecabe1
+        source: upstream
+      - digest: sha256:0017ccf1dd643db44b03764648fea6293a9b8ed25b08373d9d4cfa0f9551d2d8
+        source: upstream
+      - digest: sha256:9adfc8b0a111d8c60c76bda017ddfd16dbd7569448097c5d146830f575697cfd
+        source: upstream
+      - digest: sha256:420b01aacee609ad63ac3c7d0b1d9dda64e17c0a74c87c615bf95a7cbe690da1
+        source: upstream
+      - digest: sha256:4210212f34f952ac3795bec90665bf39ea34f9be6ed7c077dd4ab8cf9464cb80
+        source: upstream
+      - digest: sha256:73213b547c7200fe1754d89a3469297bb64b220af7d3b3f99fcb35d16129dadb
+        source: upstream
+      - digest: sha256:5b182e3b8dec81e3b00d6a18b5bb6cd9814368a3a80cfcdb28a62711eb90a1e8
+        source: upstream
+      - digest: sha256:244c504b0ed5edc623b5f1ce5f10c4c715ee1d88bc5997ab8e22915e79ef92ea
+        source: upstream
+      - digest: sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef
+        source: upstream
+      - digest: sha256:d0da96c481f8adc60075832a1cd1c4258785c9012041077d726352a69f526bcc
+        source: upstream
