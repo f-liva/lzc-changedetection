@@ -1,0 +1,50 @@
+lzc-sdk-version: '0.1'
+name: changedetection.io
+package: cloud.lazycat.app.changedetection
+version: 1.0.0
+description: Self-hosted website change monitoring with Chrome (Playwright) browser support
+homepage: https://changedetection.io
+author: Federico Liva
+locales:
+  en:
+    name: changedetection.io
+    description: Self-hosted website change monitoring with Chrome (Playwright) browser support
+  it:
+    name: changedetection.io
+    description: Monitoraggio self-hosted di modifiche su siti web con browser Chrome (Playwright)
+  zh:
+    name: changedetection.io
+    description: 自托管网站变更监控，集成 Chrome (Playwright) 浏览器
+
+application:
+  routes:
+    - /=http://changedetection.cloud.lazycat.app.changedetection.lzcapp:5000
+  subdomain: changedetection
+
+services:
+  changedetection:
+    image: registry.lazycat.cloud/u30562882/dgtlmoon/changedetection.io:2b28f8bb68da3379
+    binds:
+      - /lzcapp/var/datastore:/datastore
+    environment:
+      - PORT=5000
+      - LISTEN_HOST=0.0.0.0
+      - PLAYWRIGHT_DRIVER_URL=ws://sockpuppet.cloud.lazycat.app.changedetection.lzcapp:3000
+      - HIDE_REFERER=true
+      - DISABLE_VERSION_CHECK=true
+      - FETCH_WORKERS=10
+      - MINIMUM_SECONDS_RECHECK_TIME=3
+      - SCREENSHOT_MAX_HEIGHT=16000
+      - LOGGER_LEVEL=DEBUG
+      # - TZ=Europe/Rome
+      # - BASE_URL=https://changedetection.<box>.heiyu.space
+      # - EXTRA_PACKAGES=changedetection.io-osint-processor
+
+  sockpuppet:
+    image: registry.lazycat.cloud/u30562882/dgtlmoon/sockpuppetbrowser:081de799097baf90
+    environment:
+      - SCREEN_WIDTH=1920
+      - SCREEN_HEIGHT=1080
+      - SCREEN_DEPTH=24
+      - MAX_CONCURRENT_CHROME_PROCESSES=10
+      - LOG_LEVEL=DEBUG
