@@ -1,0 +1,24 @@
+package: cloud.lazycat.app.changedetectionio
+version: 1.0.0
+name: changedetection.io
+description: Self-hosted website change monitoring with embedded Chrome (Playwright)
+author: Federico Liva
+license: Apache-2.0
+homepage: https://github.com/f-liva/lzc-changedetection
+
+locales:
+  en-US:
+    name: changedetection.io
+    description: Self-hosted website change monitoring with embedded Chrome (Playwright)
+  it-IT:
+    name: changedetection.io
+    description: Monitoraggio self-hosted di modifiche su siti web con browser Chrome (Playwright) integrato
+  zh-CN:
+    name: changedetection.io
+    description: 自托管网站变更监控，集成 Chrome (Playwright) 浏览器
+
+permissions:
+  required:
+    - net.internet
+  optional:
+    - net.lan
